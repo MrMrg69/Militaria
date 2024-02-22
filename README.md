@@ -3,7 +3,7 @@ git# Militaria - Web Designer
 ## Tarefas
 
 - [ ] Header
-    - [✔️] HTML
+    - [x] HTML
     - [ ] CSS
 - [ ] Apresentação
 - [ ] Projetos
