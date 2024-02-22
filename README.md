@@ -4,7 +4,7 @@ git# Militaria - Web Designer
 
 - [ ] Header
     - [x] HTML
-    - [ ] CSS
+    - [x] CSS
 - [ ] Apresentação
 - [ ] Projetos
 - [ ] Conhecimentos
