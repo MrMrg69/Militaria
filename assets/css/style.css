@@ -1,10 +1,11 @@
 body {
     font-family: 'Arial', sans-serif;
     background-image: url(../images/Fundo.png);
-    background-size: 1280px 832px;
     flex-shrink: 0;
     background-position: cover;
     background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 }
 
 nav ul {
@@ -20,9 +21,18 @@ nav a {
     padding: 10px;
 }
 
+nav img {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    height: 32px;
+    width: 32px;
+}
+
 header {
     text-align: center;
-    color: #1F1F1F;
+    color: #888585;
+    font-size: large;
 }
 
 button {
@@ -40,3 +50,5 @@ footer {
     text-align: center;
     color: #6F0000;
 }
+
+
