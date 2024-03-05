@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +8,32 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">História</a></li>
-            <li><a href="#">Sobre Nós</a></li>
-            <li><a href="#">Equipamentos</a></li>
-            <li><a href="#">Search</a></li>
-        </ul>
-        <img src="./assets/images/Logo.png" alt="Logo" class="Logo">
-    </nav>
+    <div class="background-image"></div>
     <header>
-        <h1>World Wars</h1>
-        <p>A militar se esforça para homenagear os participantes originais da Primeira e 
-            Segunda Guerras Mundiais por meio de materiais educacionais.</p>
-            <button>Veja Agora</button>
+        <nav class="nav-bar">
+            <ul class="nav-menu">
+                <li class="nav-item dropdown">História
+                    <ul class="dropdown-content">
+                        
+                    </ul>
+                </li>
+                <li class="nav-item">Sobre Nós</li>
+                <li class="nav-item dropdown">Equipamentos
+                    <ul class="dropdown-content">
+                        
+                    </ul>
+                </li>
+                <li class="nav-item search-icon" id="searchIcon">Search 🔍</li>
+            </ul>
+            <div class="search-container" id="searchContainer">
+                <input type="text" placeholder="Pesquisar..." id="searchInput" class="search-input">
+            </div>
+            <img src="./assets/images/Logo.png" alt="Logo do Site" class="site-logo" id="siteLogo">
+        </nav>
     </header>
-    <footer>
-        <p>Vinícius Mergl Margonari</p>
-        <p>Caio Sproviere de Melo</p>
-        <p>Web Developer</p>
-    </footer>
+    <script src="script.js"></script>
+    <h1>World Wars</h1>
 </body>
 </html>
+
+
