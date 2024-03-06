@@ -1,16 +1,31 @@
+:root {
+    --background-dark: rgba(0, 0, 0, 0.8);
+    --text-color: #fff;
+    --text-color-hover: #bbb;
+    --menu-padding: 10px 40px;
+    --font-primary: 'Arial', sans-serif;
+    --background-image-url: url('../images/Fundo.png');
+    --promo-text-color: #BDBCBC;
+    --search-input-padding: 8px;
+    --search-input-border-radius: 5px;
+    --logo-size: 3rem;
+    --header-padding: 1rem;
+    --logo-border-radius: 10px;
+}
+
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
     height: 100%;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-primary);
 }
 
 .background-image {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-image: url('../images/Fundo.png');
+    background-image: var(--background-image-url);
     background-size: cover;
     z-index: -1;
 }
@@ -21,14 +36,14 @@ header {
     padding-top: 20px;
 }
 
-.menu-container {
+.menu-container, .nav-bar {
     position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.8);
+    left: var(--header-padding);
+    right: var(--header-padding);
+    top: var(--header-padding);
+    background: var(--background-dark);
     border-radius: 5px;
-    padding: 10px 40px;
+    padding: var(--menu-padding);
 }
 
 .nav-menu {
@@ -41,24 +56,12 @@ header {
 
 .nav-item {
     margin-right: 20px;
-    color: #fff;
+    color: var(--text-color);
     cursor: pointer;
 }
 
 .nav-item:hover {
-    color: #bbb;
-}
-
-.nav-bar {
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 5px;
-    padding: 10px 40px;
-}
-
-.nav-bar::after {
-    content: "";
-    display: block;
-    clear: both;
+    color: var(--text-color-hover);
 }
 
 .dropdown-content {
@@ -86,8 +89,8 @@ header {
 }
 
 .search-input {
-    padding: 8px;
-    border-radius: 5px;
+    padding: var(--search-input-padding);
+    border-radius: var(--search-input-border-radius);
     border: none;
     transition: all 0.5s;
 }
@@ -100,19 +103,42 @@ header {
     cursor: pointer;
 }
 
-.logo-container {
+.logo-container, .site-logo {
+    height: var(--logo-size);
     position: absolute;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-.site-logo {
-    height: 50px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
+    left: var(--header-padding);
+    top: var(--header-padding);
+    border-radius: var(--logo-border-radius);
     transition: all 0.5s;
 }
 
+.promo-card {
+    position: absolute;
+    text-align: center;
+    color: var(--promo-text-color);
+    padding: 250px;
+}
+  
+.promo-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+  
+.promo-title {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    max-width: 100%;
+}
+  
+.promo-text {
+    font-size: 1.5rem;
+    max-width: 100%;
+    margin: auto;
+}
